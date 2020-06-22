@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/firstNameText"
+                android:text="First Name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="40dp" />
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/firstNameText"/>
+
+            <TextView
+                android:id="@+id/lastNameText"
+                android:text="Last Name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/firstName"/>
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/lastNameText"/>
+
+            <TextView
+                android:id="@+id/phoneNumText"
+                android:text="Phone Number"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/lastName"/>
+
+            <EditText
+                android:id="@+id/phoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/phoneNumText" />
+
+            <TextView
+                android:id="@+id/birthDateText"
+                android:text="Birth Date"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/phoneNum"/>
+
+            <Button
+                android:id="@+id/selectBirthDate"
+                android:text="Select Date"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/birthDateText" />
+
+            <TextView
+                android:id="@+id/birthDate"
+                android:textSize="17sp"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/selectBirthDate"
+                android:layout_below="@id/birthDateText" />
+
+            <TextView
+                android:id="@+id/firstContactText"
+                android:text="Date of First Contact"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/selectBirthDate"/>
+
+            <Button
+                android:id="@+id/selectFirstContact"
+                android:text="Select Date"
+                android:textAllCaps="false"
+                android:background="@drawable/custom_button_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/firstContactText" />
+
+            <TextView
+                android:id="@+id/firstContact"
+                android:textSize="17sp"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/selectFirstContact"
+                android:layout_below="@id/firstContactText" />
+
+            <TextView
+                android:id="@+id/addressText"
+                android:text="Address"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/selectFirstContact"/>
+
+            <EditText
+                android:id="@+id/addressLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/addressText" />
+
+            <EditText
+                android:id="@+id/addressLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/addressLine1" />
+
+            <TextView
+                android:id="@+id/cityText"
+                android:text="City"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/addressLine2"/>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/cityText" />
+
+            <TextView
+                android:id="@+id/stateText"
+                android:text="State"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/city"/>
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/stateText" />
+
+            <TextView
+                android:id="@+id/zipcodeText"
+                android:text="Zip code"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/state"/>
+
+            <EditText
+                android:id="@+id/zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="120dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/zipcodeText" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:onClick="deleteClick"
+        android:text="DELETE"
+        android:layout_above="@id/save" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:onClick="saveClick"
+        android:text="SAVE"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
