@@ -4,8 +4,13 @@ This is a contact manager app that allows users to add, edit, and delete contact
 
 ***** PROGRAMING LANGUAGE AND TOOLS *****
 
-- Written in Java
-- Programmed in Android Studio
+- Java
+- Android Studio
+
+***** FEATURES *****
+- SQLite Database
+- Google Maps
+- Accelerometer Feature
 
 ***** STEP BY STEP DESCRIPTION ***** 
 
