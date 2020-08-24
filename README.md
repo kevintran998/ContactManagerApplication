@@ -10,7 +10,7 @@ This is a contact manager app that allows users to add, edit, and delete contact
 ***** FEATURES *****
 - SQLite Database
 - Google Maps
-- Accelerometer Feature
+- Accelerometer
 
 ***** STEP BY STEP DESCRIPTION ***** 
 
